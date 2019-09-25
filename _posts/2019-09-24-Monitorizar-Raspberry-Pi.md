@@ -3,18 +3,20 @@ layout: post
 title: Monitorizar Raspberry Pi
 categories: [raspberry pi, monitorización]
 tags: [docker, raspberry pi, linux, raspbian, monitorización, telegraf, influxdb, grafana]
+excerpt_separator: <!--more-->
 url_influxdb: https://www.influxdata.com/get-influxdb/
 url_telegraf: https://influxdata.staging.wpengine.com/time-series-platform/telegraf/
 url_chronograf: https://www.influxdata.com/time-series-platform/chronograf/
 url_grafana: https://grafana.com/
 url_grafana_dashboard: https://grafana.com/grafana/dashboards/10578
-
 published: true
 ---
 
 No pude evitarlo... Los _dashboards_ y la monitorización es algo que siempre me ha llamado la atención, sobre todo cuando es útil 
 para ver de un vistazo el estado de un sistema o de una aplicación. Y desde que conocí **Grafana** estaba claro que en algún momento 
 acabaría implementando algún sistema en mi _Raspberry_ que la usara. Pero primero empecemos por partes, y en orden...
+
+<!--more-->
 
 En esta entrada veremos cómo configurar:
 
