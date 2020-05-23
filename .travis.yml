@@ -27,11 +27,6 @@ deploy:
   github_token: $GITHUB_TOKEN
   keep_history: true
 
-cache: bundler
-
-notifications:
-  email: false
-
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
