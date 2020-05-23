@@ -1,6 +1,6 @@
-gem install jekyll 
+# gem install jekyll 
 # Add --trace to jekyll build to see detailed log
-jekyll build
+# jekyll build
 
 # gem install html-proofer
 # htmlproofer ./_site --disable-external
