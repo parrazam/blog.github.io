@@ -1,4 +1,5 @@
 language: ruby
+
 rvm:
   - 2.7.1
 
@@ -9,13 +10,25 @@ script: ./build_scripts/cibuild
 
 before_install:
   - gem update --system
+  - gem install bundler
+  - gem install rake
   - gem install jekyll
+  - gem install github-pages
 
 branches:
   only:
     - master
     - release
     - develop
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: docs
+  on:
+    branch: master
 
 env:
   global:
