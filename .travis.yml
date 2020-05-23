@@ -18,11 +18,9 @@ before_install:
 branches:
   only:
     - master
-    - release
     - develop
 
 deploy:
-  provider: pages
   skip_cleanup: true
   github_token: $GITHUB_TOKEN
   keep_history: true
